@@ -13,7 +13,10 @@ const config = {
     pages: 'docs',
     assets: 'docs',
     fallback: null
-  })
+  }),
+  paths: {
+    base: '/hipeople21.github.io'
+  }
  }
 };
 export default config;
