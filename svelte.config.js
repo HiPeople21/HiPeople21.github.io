@@ -6,9 +6,6 @@ const config = {
  // Consult https://github.com/sveltejs/svelte-preprocess
  // for more information about preprocessors
  preprocess: preprocess(),
- prerender : { 
-   default: true
-  },
  kit: {
  // hydrate the <div id="svelte"> element in src/app.html
   adapter: adapter({
@@ -18,6 +15,9 @@ const config = {
   }),
   paths: {
     base: '/hipeople21.github.io'
+  },
+  prerender: {
+    default: true
   }
  }
 };
