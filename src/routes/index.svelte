@@ -9,7 +9,9 @@
         };
     }
 </script>
+
 <script>
     export let projects;
-  </script>
-<h1>{projects}</h1>
+</script>
+
+<h1>{projects.Projects}</h1>
