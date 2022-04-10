@@ -1,10 +1,11 @@
 <script context="module">
     export let load = async ({fetch}) => {
-        let response = await fetch('https://Server.hipeople21.repl.co');
+        let response = await fetch('./api');
+        let { projects } = await response.json()
         return {
             status: response.status,
             props: {
-                projects: response.ok && (await response.json())
+                projects: response.ok && projects
             }
         };
     }

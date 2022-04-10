@@ -10,9 +10,9 @@ const config = {
     assets: 'docs',
     fallback: null
   }),
-  paths: {
-    base: '/hipeople21.github.io'
-  },
+  // paths: {
+  //   base: '/hipeople21.github.io'
+  // },
   prerender: {
     default: true
   }
