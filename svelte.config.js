@@ -8,14 +8,14 @@ const config = {
   adapter: adapter({
     pages: 'docs',
     assets: 'docs',
-    fallback: null
+    fallback: 'index.html'
   }),
   paths: {
     base: '/hipeople21.github.io'
   },
-  prerender: {
-    default: true
-  }
+  // prerender: {
+  //   default: true
+  // }
  }
 };
 export default config;
