@@ -11,11 +11,11 @@ const config = {
     fallback: 'index.html'
   }),
   paths: {
-    base: '/hipeople21.github.io'
+    base: ''
   },
-  // prerender: {
-  //   default: true
-  // }
+  prerender: {
+    default: false
+  }
  }
 };
 export default config;
