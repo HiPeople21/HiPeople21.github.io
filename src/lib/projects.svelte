@@ -1,7 +1,7 @@
 <script>
-    import { onMount } from 'svelte'
+    import { onMount } from 'svelte';
     import Project from '$lib/project.svelte';
-    let projects = []
+    let projects = [];
     let error;
 
     onMount(async () => {
@@ -10,15 +10,14 @@
             projects = (await response.json()).Projects;
         } catch (err) {
             error = err;
-            
         }
     })
 </script>
 
 {#if error}
-<p>{error}</p>
+    <p>There was an error fetching the projects.</p>
 {:else}
-{#each projects as project}
-    <Project {project}/>
-{/each}
+    {#each projects as project}
+        <Project {project}/>
+    {/each}
 {/if}
