@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
     export let load = async ({fetch}) => {
         let response = await fetch('https://Server.hipeople21.repl.co');
         return {
@@ -8,24 +8,13 @@
             }
         };
     }
-</script>
+</script> -->
 
 <script>
-    export let projects;
-
-    // onMount(async () => {
-    //     try{
-    //     let response = await fetch('https://Server.hipeople21.repl.co');
-        
-    //     console.log(response)
-    //     projects = await response.json()
-    //     } catch (err) {
-    //         console.log(err)
-    //     }
-    // })
+    import Projects from '$lib/projects.svelte';    
 
 </script>
 
 
-<h1>{projects.Projects}</h1>
+<Projects/>
 
