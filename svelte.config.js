@@ -8,13 +8,13 @@ const config = {
   adapter: adapter({
     pages: 'docs',
     assets: 'docs',
-    fallback: 'index.html'
+    fallback: null
   }),
   paths: {
     base: ''
   },
   prerender: {
-    default: false
+    default: true
   }
  }
 };
